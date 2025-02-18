@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,6 +13,7 @@
             background: #f4f4f4;
             color: #333;
         }
+
         header {
             background: linear-gradient(to right, #007BFF, #6610f2);
             color: white;
@@ -19,16 +21,19 @@
             padding: 40px 20px;
             font-size: 1.5em;
         }
+
         .profile {
             text-align: center;
             margin-top: 20px;
         }
+
         .profile img {
             width: 150px;
             height: 150px;
             border-radius: 50%;
             border: 3px solid #007BFF;
         }
+
         .container {
             max-width: 900px;
             margin: 40px auto;
@@ -38,10 +43,12 @@
             box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
             text-align: center;
         }
+
         iframe {
             max-width: 100%;
             border-radius: 10px;
         }
+
         select {
             padding: 10px;
             margin: 10px;
@@ -49,6 +56,7 @@
             border-radius: 5px;
             border: 1px solid #ccc;
         }
+
         .gallery img {
             width: 150px;
             height: auto;
@@ -56,29 +64,26 @@
             border-radius: 10px;
             transition: transform 0.3s;
         }
+
         .gallery img:hover {
             transform: scale(1.1);
         }
-        footer {
-            background: #333;
-            color: white;
-            text-align: center;
-            padding: 15px;
-            margin-top: 40px;
-            font-size: 0.9em;
-        }
+
         a {
             color: #007BFF;
             text-decoration: none;
             font-weight: bold;
         }
+
         a:hover {
             text-decoration: underline;
         }
+
         .contact-info {
             font-size: 1.1em;
             margin-top: 10px;
         }
+
         .content {
             display: none;
             margin-top: 20px;
@@ -92,7 +97,7 @@
         function showContent(id, type) {
             let learningSections = ['week1-learning', 'week2-learning', 'week3-learning'];
             let assignmentSections = ['week1-assignment', 'week2-assignment', 'week3-assignment'];
-            
+
             if (type === 'learning') {
                 learningSections.forEach(section => {
                     document.getElementById(section).style.display = 'none';
@@ -111,6 +116,7 @@
         }
     </script>
 </head>
+
 <body>
     <header>
         <h1>Prince Gusain</h1>
@@ -123,7 +129,7 @@
 
     <section class="container">
         <h2>About Me</h2>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/slmmcpXMfIc?si=Z_7_9_yW4jCoWh1K" allowfullscreen></iframe>
+        <p>Welcome to my portfolio! Explore my learnings, assignments, and projects.</p>
     </section>
 
     <section class="container">
@@ -134,14 +140,18 @@
             <option value="week2-learning">Week 2</option>
             <option value="week3-learning">Week 3</option>
         </select>
-        
+
         <div id="week1-learning" class="content">
             <h3>Week 1 Learnings</h3>
-            <p>In the first week, we began by learning about the subject, followed by an introduction to the e-portfolio. Next, we focused on self-introduction, where each of us was called to the stage to introduce ourselves to the class.</p>
+            <p>In the first week, we began by learning about the subject, followed by an introduction to the
+                e-portfolio. Next, we focused on self-introduction, where each of us was called to the stage to
+                introduce ourselves to the class.</p>
         </div>
         <div id="week2-learning" class="content">
             <h3>Week 2 Learnings</h3>
-            <p>In the second week, we were given a self-profiling sheet to fill out, which included questions about our personality, strengths, weaknesses, and more. Later, the responses were discussed in class, where each student was asked to share their answers.</p>
+            <p>In the second week, we were given a self-profiling sheet to fill out, which included questions about our
+                personality, strengths, weaknesses, and more. Later, the responses were discussed in class, where each
+                student was asked to share their answers.</p>
         </div>
         <div id="week3-learning" class="content">
             <h3>Week 3 Learnings</h3>
@@ -157,10 +167,11 @@
             <option value="week2-assignment">Week 2</option>
             <option value="week3-assignment">Week 3</option>
         </select>
-        
+
         <div id="week1-assignment" class="content">
             <h3>Week 1 Assignments</h3>
-            <p>Introduction video</p>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/slmmcpXMfIc?si=Z_7_9_yW4jCoWh1K"
+                allowfullscreen></iframe>
         </div>
         <div id="week2-assignment" class="content">
             <h3>Week 2 Assignments</h3>
@@ -187,13 +198,18 @@
 
     <section class="container">
         <h2>Contact Me</h2>
-        <p class="contact-info">Email: <a href="mailto:princegusain01@gmail.com">princegusain01@gmail.com</a></p>
-        <p class="contact-info">GitHub: <a href="https://github.com/yourgithub" target="_blank">yourgithub</a></p>
-        <p class="contact-info">LinkedIn: <a href="https://linkedin.com/in/yourlinkedin" target="_blank">yourlinkedin</a></p>
+        <p class="contact-info">
+            Email: <a href="mailto:princegusain01@gmail.com">princegusain01@gmail.com</a>
+        </p>
+        <p class="contact-info">
+            <a href="https://github.com/yourgithub" target="_blank">
+                <img src="github.jpg" alt="GitHub" width="40" height="40">
+            </a>
+            <a href="https://linkedin.com/in/yourlinkedin" target="_blank">
+                <img src="linkedin.jpg" alt="LinkedIn" width="40" height="40">
+            </a>
+        </p>
     </section>
-
-    <footer>
-        <p>&copy; 2025 Prince Gusain. All rights reserved.</p>
-    </footer>
 </body>
+
 </html>
