@@ -185,7 +185,7 @@
          <img src="w2p2.jpg" alt="Week 2 Assignment" width="200">
     </a>
 </div> -->
-        <div id="week2-assignment" class="content">
+<!--         <div id="week2-assignment" class="content">
     <h3>Week 2 Assignments</h3>
     <p>Click below to view the scanned images of the assignment:</p>
     <button onclick="showAssignmentImages()">View Assignment</button>
@@ -195,7 +195,83 @@
 <!--         <img src="image3.jpg" alt="Scanned Assignment Page 3" width="300"> -->
         <!-- Add more images as needed -->
     </div>
+</div> -->
+<div id="week2-assignment" class="content">
+    <h3>Week 2 Assignments</h3>
+    <p>Click below to view the scanned images of the assignment:</p>
+    <button onclick="showAssignmentImages()">View Assignment</button>
+    
+    <div id="assignment-images" style="display: none; margin-top: 20px;">
+        <img src="image1.jpg" alt="Scanned Assignment Page 1" class="thumbnail" onclick="openModal(this)">
+        <img src="image2.jpg" alt="Scanned Assignment Page 2" class="thumbnail" onclick="openModal(this)">
+        <img src="image3.jpg" alt="Scanned Assignment Page 3" class="thumbnail" onclick="openModal(this)">
+        <!-- Add more images as needed -->
+    </div>
 </div>
+
+<!-- Modal for Full-Size Image -->
+<div id="image-modal" class="modal">
+    <span class="close" onclick="closeModal()">&times;</span>
+    <img class="modal-content" id="full-image">
+</div>
+
+<style>
+    .thumbnail {
+        width: 200px;
+        cursor: pointer;
+        margin: 10px;
+        border-radius: 10px;
+        transition: transform 0.3s;
+    }
+    
+    .thumbnail:hover {
+        transform: scale(1.1);
+    }
+
+    .modal {
+        display: none;
+        position: fixed;
+        z-index: 1000;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.8);
+        text-align: center;
+    }
+
+    .modal-content {
+        max-width: 90%;
+        max-height: 90%;
+        margin-top: 5%;
+    }
+
+    .close {
+        position: absolute;
+        top: 10px;
+        right: 25px;
+        color: white;
+        font-size: 35px;
+        font-weight: bold;
+        cursor: pointer;
+    }
+</style>
+
+<script>
+    function showAssignmentImages() {
+        document.getElementById("assignment-images").style.display = "block";
+    }
+
+    function openModal(imgElement) {
+        document.getElementById("full-image").src = imgElement.src;
+        document.getElementById("image-modal").style.display = "block";
+    }
+
+    function closeModal() {
+        document.getElementById("image-modal").style.display = "none";
+    }
+</script>
+
 
 <script>
     function showAssignmentImages() {
