@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prince Gusain - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1>Prince Gusain</h1>
+        <p>Bachelor of Technology in Computer Science and Engineering Student from Graphic Era Hill University, Dehradun
+        </p>
+    </header>
+
+    <section class="profile">
+        <img src="profile.jpg" alt="Profile Picture">
+    </section>
+
+    <section class="container">
+        <h2>About Me</h2>
+        <p>
+        <h3>Hi! I’m a BTech CSE student who enjoys solving DSA (Data Structures and Algorithms) problems and building
+            websites. I love the challenge of breaking down problems and finding efficient solutions—it’s like solving
+            little puzzles every day. Web development is another passion of mine; there’s something really satisfying
+            about turning an idea into a working, interactive site.
+
+            When I’m not coding, you’ll probably find me listening to music or watching travel vlogs. I enjoy
+            discovering new places—virtually for now, but hopefully in person soon!
+
+            I’m always up for learning something new, taking on interesting projects, and connecting with others who
+            share a passion for tech and creativity.</h3>
+        </p>
+    </section>
+
+    <section class="container">
+        <h2>Learnings</h2>
+        <select onchange="showContent(this.value, 'learning')">
+            <option value="none">Select Week</option>
+            <option value="week1-learning">Week 1</option>
+            <option value="week2-learning">Week 2</option>
+            <option value="week3-learning">Week 3</option>
+            <option value="week4-learning">Week 4</option>
+            <option value="week5-learning">Week 5</option>
+            <option value="week6-learning">Week 6</option>
+        </select>
+
+        <div id="week1-learning" class="content">
+            <h3>Week 1 Learnings</h3>
+            <p>In the first week, we began by learning about the subject, followed by an introduction to the
+                e-portfolio...</p>
+        </div>
+        <div id="week2-learning" class="content">
+            <h3>Week 2 Learnings</h3>
+            <p>In the second week, we were given a self-profiling sheet to fill out...</p>
+        </div>
+        <div id="week3-learning" class="content">
+            <h3>Week 3 Learnings</h3>
+            <p>In the third week, we had our group presentations.</p>
+        </div>
+        <div id="week4-learning" class="content">
+            <h3>Week 4 Learnings</h3>
+            <p>In the fourth week, we had to give speaches infront of the class.</p>
+        </div>
+        <div id="week5-learning" class="content">
+            <h3>Week 5 Learnings</h3>
+            <p>In the fifth week, we had group discussions.</p>
+        </div>
+        <div id="week6-learning" class="content">
+            <h3>Week 6 Learnings</h3>
+            <p>In the sixth week, our e portfolios are assessed and marks are given to us.</p>
+        </div>
+    </section>
+
+    <section class="container">
+        <h2>Assignments</h2>
+        <select onchange="showContent(this.value, 'assignment')">
+            <option value="none">Select Week</option>
+            <option value="week1-assignment">Week 1</option>
+            <option value="week2-assignment">Week 2</option>
+            <option value="week3-assignment">Week 3</option>
+            <option value="week4-assignment">Week 4</option>
+            <option value="week5-assignment">Week 5</option>
+            <option value="week6-assignment">Week 6</option>
+        </select>
+
+        <!-- Week 1 -->
+        <div id="week1-assignment" class="content">
+            <h3>Week 1 Assignment - Self Introduction recorded video of 1 minute.</h3>
+            <video width="560" height="315" controls>
+                <source src="intro.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+
+
+        <!-- Week 2 -->
+        <div id="week2-assignment" class="content">
+            <h3>Week 2 Assignment - Hand written PDF to be uploaded of sixteen Questions and Answers of self profiling
+                sheet.</h3>
+
+            <!-- Embedded PDF viewer -->
+            <iframe src="Self Profiling Sheet.pdf" width="100%" height="600px"
+                style="border: 1px solid #ccc; border-radius: 10px;">
+                This browser does not support PDFs. Please download the PDF to view it.
+            </iframe>
+        </div>
+
+        <!-- Week 3 -->
+        <div id="week3-assignment" class="content">
+            <h3>Week 3 Assignment - Hand written Cover Letter in form of an E-mail.</h3>
+
+            <!-- Embedded PDF viewer -->
+            <iframe src="Cover Letter.pdf" width="100%" height="600px"
+                style="border: 1px solid #ccc; border-radius: 10px;">
+                This browser does not support PDFs. Please download the PDF to view it.
+            </iframe>
+        </div>
+
+        <!-- Week 4 -->
+        <div id="week4-assignment" class="content">
+            <h3>Week 4 Assignment - Recorded Speech of 1 minute.
+            </h3>
+            <video width="560" height="315" controls>
+                <source src="speech.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+
+        <!-- Week 5 -->
+        <div id="week5-assignment" class="content">
+            <h3>Week 5 Assignment - Movie review and related three Questions and Answers.
+            </h3>
+            <h3>The Sound of Music – Movie Review</h3>
+            <h4>The Sound of Music is a beautiful and heartwarming movie set in Austria just before World War II. It
+                tells the story of Maria, a cheerful and kind young woman training to be a nun. She's sent to be the
+                governess for a strict naval officer’s seven children. At first, the kids are distant and the father is
+                cold, but Maria slowly brings music, laughter, and love into their home.
+
+                The movie has some really famous songs like "Do-Re-Mi," "My Favorite Things," and "Edelweiss." Julie
+                Andrews, who plays Maria, is absolutely charming and makes you feel every moment. The movie is also
+                visually stunning, with amazing views of the mountains and countryside.
+
+                It’s not just about music and family—it also shows how the family stands up for what’s right when the
+                Nazis take over Austria. It's a mix of joy, romance, and courage that still feels meaningful even today.
+            </h4>
+            <h3>3 Simple Questions & Answers</h3>
+            <h4>Q1: What is The Sound of Music mainly about?
+                A: It’s about a woman named Maria who brings love and music into a strict family’s life and helps them
+                become close again.</h4>
+            <h4>Q2: How does Maria help the von Trapp family?
+                A: She teaches the kids to sing and play, helps them open up emotionally, and brings the father and
+                children closer together.</h4>
+            <h4>Q3: Why do the von Trapps leave Austria?
+                A: Because Captain von Trapp doesn’t want to work for the Nazis, so the family escapes to stay free and
+                safe.</h4>
+
+        </div>
+
+        <!-- Week 6 -->
+        <div id="week6-assignment" class="content">
+            <h3>Week 6 Assignment - Top 25 Learnings from PESE lectures</h3>
+
+            <pre>
+<h3>1. Don’t Make Fun of Classmates
+Everyone is learning—respect helps us grow together.
+
+2. We Are a Team
+Supporting each other creates a positive space to improve.
+
+3. Help Each Other Improve
+Share tips, correct gently, and celebrate progress.
+
+4. Learn from Each Other's Mistakes
+Every mistake is a chance for the whole class to learn.
+
+5. Practice English Daily
+Spend at least 1 hour reading, writing, listening, or speaking in English.
+
+6. Read to Build Vocabulary
+Reading books, articles, or even comics helps you learn new words and sentence structures.
+
+7. Write Regularly
+Journaling, essays, or even short stories help improve grammar and expression.
+
+8. Listen to English Every Day
+Watch videos, listen to podcasts, or songs to improve pronunciation and understanding.
+
+9. Speak Without Fear
+Fluency comes from speaking, even if you make mistakes.
+
+10. Group Activities Build Teamwork
+Working together helps develop leadership, cooperation, and confidence.
+
+11. Speeches Build Confidence
+Speaking in front of others improves public speaking and self-expression.
+
+12. Group Discussions Improve Thinking
+Talking about topics helps develop opinions and listening skills.
+
+13. Group Presentations Teach Responsibility
+Everyone has a part, and success comes from working together.
+
+14. Give and Receive Feedback Politely
+Positive and respectful feedback helps improve performance.
+
+15. Behave Well in Class
+Discipline shows respect for the teacher, classmates, and learning process.
+
+16. Be Respectful to All Opinions
+Everyone sees things differently—learn to listen with an open mind.
+
+17. Confidence Grows with Practice
+The more you participate, the stronger your communication becomes.
+
+18. Use English in Daily Life
+Talk to friends, ask questions, and think in English to improve fluency.
+
+19. Stay Positive and Encourage Others
+A good attitude makes the whole class more motivated.
+
+20. Correct Gently, Not Rudely
+Help your friends improve without making them feel bad.
+
+21. Don’t Be Afraid to Make Mistakes
+Mistakes are part of learning—what matters is learning from them.
+
+22. Be an Active Listener
+Show that you are paying attention when someone is speaking.
+
+23. Take Notes During Discussions
+Writing down ideas helps remember and learn better.
+
+24. Respect Everyone’s Speaking Time
+Don’t interrupt—let everyone express themselves.
+
+25. Celebrate Small Improvements
+Growth takes time—recognize each step forward.</h3>
+    </pre>
+        </div>
+
+    </section>
+
+
+    <section class="container">
+        <h2>Gallery</h2>
+        <div class="project">
+            <p>1. Group Presentation(3rd from left).</p>
+            <button onclick="toggleImage('Group Presentation-img')">Images</button>
+            <div id="Group Presentation-img" style="display:none; margin-top:10px;">
+                <img src="group.jpg" alt="Group Presentation"
+                    style="max-width: 100%; height: auto; border-radius: 8px;">
+            </div>
+        </div>
+    </section>
+
+    <section class="container">
+        <h2>Projects</h2>
+
+        <div class="project">
+            <p>1. Amazon frontend.</p>
+            <button onclick="toggleImage('amazon-img')">Images</button>
+            <div id="amazon-img" style="display:none; margin-top:10px;">
+                <img src="amazon.png" alt="Amazon Frontend" style="max-width: 100%; height: auto; border-radius: 8px;">
+            </div>
+        </div>
+
+        <div class="project">
+            <p>2. Spotify frontend + backend</p>
+            <button onclick="toggleImage('spotify-img')">Images</button>
+            <div id="spotify-img" style="display:none; margin-top:10px;">
+                <img src="spotify.png" alt="Spotify Frontend and Backend"
+                    style="max-width: 100%; height: auto; border-radius: 8px;">
+            </div>
+        </div>
+
+        <div class="project">
+            <p>3. Friend Recommendation System frontend + backend</p>
+            <button onclick="toggleImage('friendrec-img')">Images</button>
+            <div id="friendrec-img" style="display:none; margin-top:10px;">
+                <img src="friend.png" alt="Friend Recommendation System"
+                    style="max-width: 100%; height: auto; border-radius: 8px;">
+            </div>
+        </div>
+    </section>
+
+    <section class="container">
+        <h2>Contact Me</h2>
+        <p class="contact-info">
+            Phone: <a href="tel:+91 7906225805">+91 7906225805</a>
+        </p>
+        <p class="contact-info">
+            <a href="https://www.linkedin.com/in/prince-gusain-8b5140325/" target="_blank">
+                <img src="linkedin.jpg" alt="LinkedIn" width="40" height="40">
+            </a>
+        </p>
+    </section>
+</body>
+
+</html>
